@@ -58,7 +58,3 @@ This project focuses on **cleaning, preprocessing, and feature engineering** the
   - Dropped `reservation_status` and `reservation_status_date` to prevent **data leakage**.
 - **Final Preparation**
   - Split dataset into **train (80%)** and **test (20%)** with `random_state=42`.
-
----
-
-## 📂 Project Structure
