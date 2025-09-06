@@ -52,8 +52,10 @@ This project focuses on **cleaning, preprocessing, and feature engineering** the
   - `total_nights = stays_in_weekend_nights + stays_in_week_nights`
   - `is_family` = binary flag (`Yes`/`No`) if booking includes children or babies.
 - **Encoding Categorical Variables**
-  - Low-cardinality → **One-Hot Encoding** (e.g., `meal`, `market_segment`).
-  - High-cardinality → **Frequency Encoding** (e.g., `country`) or grouped into **"Other"**.
+  - Low-cardinality (nominal categories) → **One-Hot Encoding** (e.g., `meal`, `market_segment`).
+  - Multiple Categories → **Frequency Encoding** (e.g., `country`).
+  - Label Encoder  → Ordinal Categories (e.g, reserved_room_type, assigned_room_type).
+  - Mapping month as numbers instead of string
 - **Critical Step:**
   - Dropped `reservation_status` and `reservation_status_date` to prevent **data leakage**.
 - **Final Preparation**
